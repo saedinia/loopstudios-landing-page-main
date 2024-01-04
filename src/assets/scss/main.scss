@@ -1,0 +1,43 @@
+@import 'variables';
+
+:root {
+  --ff-alata: 'Alata', sans-serif;
+  --ff-josefin: 'Josefin Sans', sans-serif;
+
+  --fw-light: 300;
+  --fw-bold: 400;
+
+  --fs-100: 0.625rem; //10px
+  --fs-200: 0.688rem; //11px
+  --fs-300: 0.75rem; //12px
+  --fs-400: 0.875rem; //14px
+  --fs-500: 0.938rem; //15px
+  --fs-600: 1rem; //16px
+  --fs-700: 1.125rem; //18px
+  --fs-800: 1.5rem; //24px
+  --fs-900: 3rem; //48px
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-darkgray: hsl(0, 0%, 55%);
+  --clr-verydarkgray: hsl(0, 0%, 41%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-size: var(--fs-500);
+  font-family: var(--ff-alata);
+}
