@@ -13,44 +13,51 @@ function Header() {
   }, []);
 
   return (
-    <header className="layout-flex">
-      <div className="logo">
-        <img src={logo} alt="" />
-      </div>
-      <nav className={showNavMobile ? 'show' : ''}>
-        <div className="header-mobile">
-          <img src={logo} alt="" />
+    <header>
+      <div className="wrapper">
+        <div className="navbar">
+          <div className="logo">
+            <img src={logo} alt="" />
+          </div>
+          <nav className={showNavMobile ? 'show' : ''}>
+            <div className="header-mobile">
+              <img src={logo} alt="" />
+              <img
+                className="icon_close"
+                src={icon_close}
+                alt=""
+                onClick={() => setShowNavMobile(false)}
+              />
+            </div>
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </nav>
           <img
-            className="icon_close"
-            src={icon_close}
+            className="icon_hamburger"
+            src={icon_hamburger}
             alt=""
-            onClick={() => setShowNavMobile(false)}
+            onClick={() => setShowNavMobile(true)}
           />
         </div>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Careers</a>
-          </li>
-          <li>
-            <a href="#">Events</a>
-          </li>
-          <li>
-            <a href="#">Products</a>
-          </li>
-          <li>
-            <a href="#">Support</a>
-          </li>
-        </ul>
-      </nav>
-      <img
-        className="icon_hamburger"
-        src={icon_hamburger}
-        alt=""
-        onClick={() => setShowNavMobile(true)}
-      />
+        <div className="stage">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
+      </div>
     </header>
   );
 }
