@@ -1,0 +1,134 @@
+.main-container {
+  .blog {
+    .blog__container {
+      display: grid;
+      gap: 3rem;
+
+      .blog__header {
+        text-align: center;
+
+        h2 {
+          font-size: var(--fs-h2-mobile);
+        }
+
+        button {
+          display: none;
+        }
+      }
+
+      .blog__items {
+        display: grid;
+        gap: 1.5rem;
+
+        .blog__item {
+          position: relative;
+          transition: all 0.15s linear;
+
+          picture {
+            transition: opacity 0.15s linear;
+
+            &::before {
+              position: absolute;
+              content: '';
+              height: 100%;
+              width: 50%;
+              top: 0;
+              left: 0;
+              background-image: linear-gradient(
+                to right,
+                var(--clr-lightblack),
+                transparent
+              );
+            }
+          }
+
+          h3 {
+            color: var(--clr-white);
+            position: absolute;
+            bottom: 1.25rem;
+            left: 1.25rem;
+            width: 40%;
+            font-size: var(--fs-h3-mobile);
+            transition: color 0.1s linear;
+          }
+
+          &:hover {
+            picture {
+              opacity: 0.5;
+            }
+
+            h3 {
+              color: var(--clr-black);
+            }
+          }
+        }
+      }
+
+      .blog__footer {
+        text-align: center;
+      }
+
+      .blog__header,
+      .blog__footer {
+        button {
+          border: 2px solid var(--clr-black);
+          outline: none;
+          background: var(--clr-white);
+          padding: 0.5rem 2.5rem;
+          text-transform: uppercase;
+          font-family: var(--ff-alata);
+          font-size: var(--fs-600);
+          letter-spacing: 0.5rem;
+          transition:
+            color,
+            background 0.1s linear;
+
+          &:hover {
+            background: var(--clr-black);
+            color: var(--clr-white);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .main-container {
+    .blog {
+      .blog__container {
+        .blog__header {
+          display: flex;
+          justify-content: space-between;
+
+          h2 {
+            font-size: var(--fs-h2);
+          }
+
+          button {
+            display: inline;
+          }
+        }
+
+        .blog__items {
+          grid-template-columns: repeat(4, 1fr);
+
+          .blog__item {
+            h3 {
+              bottom: 2rem;
+              left: 2.5rem;
+              width: 65%;
+              font-size: var(--fs-h3);
+            }
+          }
+        }
+
+        .blog__footer {
+          button {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

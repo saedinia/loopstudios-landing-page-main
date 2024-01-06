@@ -13,8 +13,8 @@
   --fs-h1-mobile: 2.5rem; //40px
   --fs-h2: 3rem; //48px
   --fs-h2-mobile: 2rem; //32px
-  --fs-h3: 5.875rem; //42px
-  --fs-h3-mobile: 5.875rem; //42px
+  --fs-h3: 2rem; //32px
+  --fs-h3-mobile: 1.5rem; //24px
 
   --fs-100: 0.625rem; //10px
   --fs-200: 0.688rem; //11px
@@ -30,4 +30,6 @@
   --clr-black: hsl(0, 0%, 0%);
   --clr-darkgray: hsl(0, 0%, 55%);
   --clr-verydarkgray: hsl(0, 0%, 41%);
+
+  --clr-lightblack: hsl(0, 0%, 0%, 0.7);
 }
