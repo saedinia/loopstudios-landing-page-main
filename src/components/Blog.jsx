@@ -35,7 +35,7 @@ function Blog() {
                   media="(min-width: 760px)"
                   srcSet={desktop_deep_earth}
                 />
-                <img src={mobile_deep_earth} />
+                <img src={mobile_deep_earth} alt="" />
               </picture>
               <h3>Deep Earth</h3>
             </div>
@@ -46,7 +46,7 @@ function Blog() {
                   media="(min-width: 760px)"
                   srcSet={desktop_night_arcade}
                 />
-                <img src={mobile_night_arcade} />
+                <img src={mobile_night_arcade} alt="" />
               </picture>
               <h3>Night Arcade</h3>
             </div>
@@ -57,7 +57,7 @@ function Blog() {
                   media="(min-width: 760px)"
                   srcSet={desktop_soccer_team}
                 />
-                <img src={mobile_soccer_team} />
+                <img src={mobile_soccer_team} alt="" />
               </picture>
               <h3>Soccer TeaM VR</h3>
             </div>
@@ -65,7 +65,7 @@ function Blog() {
             <div className="blog__item">
               <picture>
                 <source media="(min-width: 760px)" srcSet={desktop_grid} />
-                <img src={mobile_grid} />
+                <img src={mobile_grid} alt="" />
               </picture>
               <h3>
                 The
@@ -80,7 +80,7 @@ function Blog() {
                   media="(min-width: 760px)"
                   srcSet={desktop_from_above}
                 />
-                <img src={mobile_from_above} />
+                <img src={mobile_from_above} alt="" />
               </picture>
               <h3>From Up Above VR</h3>
             </div>
@@ -91,7 +91,7 @@ function Blog() {
                   media="(min-width: 760px)"
                   srcSet={desktop_pocket_borealis}
                 />
-                <img src={mobile_pocket_borealis} />
+                <img src={mobile_pocket_borealis} alt="" />
               </picture>
               <h3>Pocket Borealis</h3>
             </div>
@@ -107,7 +107,7 @@ function Blog() {
             <div className="blog__item">
               <picture>
                 <source media="(min-width: 760px)" srcSet={desktop_fisheye} />
-                <img src={mobile_fisheye} />
+                <img src={mobile_fisheye} alt="" />
               </picture>
               <h3>Make It Fisheye</h3>
             </div>

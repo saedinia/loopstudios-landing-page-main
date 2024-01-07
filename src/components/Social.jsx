@@ -8,25 +8,25 @@ function Social() {
   return (
     <ul className="social__icons">
       <li className="icon">
-        <a href="">
+        <a href="#">
           <img src={icon_facebook} alt="" />
         </a>
       </li>
 
       <li className="icon">
-        <a href="">
+        <a href="#">
           <img src={icon_twitter} alt="" />
         </a>
       </li>
 
       <li className="icon">
-        <a href="">
+        <a href="#">
           <img src={icon_pinterest} alt="" />
         </a>
       </li>
 
       <li className="icon">
-        <a href="">
+        <a href="#">
           <img src={icon_instagram} alt="" />
         </a>
       </li>
