@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import logo from './../assets/images/logo.svg';
 import icon_hamburger from './../assets/images/icon-hamburger.svg';
 import icon_close from './../assets/images/icon-close.svg';
+import Brand from './Brand';
+import Nav from './Nav';
 
 function Header() {
   const [showNavMobile, setShowNavMobile] = useState(false);
@@ -16,12 +17,10 @@ function Header() {
     <header>
       <div className="wrapper">
         <div className="navbar">
-          <div className="logo">
-            <img src={logo} alt="" />
-          </div>
+          <Brand />
           <nav className={showNavMobile ? 'show' : ''}>
             <div className="header-mobile">
-              <img src={logo} alt="" />
+              <Brand />
               <img
                 className="icon_close"
                 src={icon_close}
@@ -29,23 +28,7 @@ function Header() {
                 onClick={() => setShowNavMobile(false)}
               />
             </div>
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Careers</a>
-              </li>
-              <li>
-                <a href="#">Events</a>
-              </li>
-              <li>
-                <a href="#">Products</a>
-              </li>
-              <li>
-                <a href="#">Support</a>
-              </li>
-            </ul>
+            <Nav />
           </nav>
           <img
             className="icon_hamburger"
